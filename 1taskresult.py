@@ -57,9 +57,10 @@ while True:
 
             start_coordinate = [(x_coordinate_start, y_coordinate_start)]
             move = 1
-            new_coordinate = []
+
             while True:
                 schema(main_maze)
+                new_coordinate = []
                 for x, y in start_coordinate:
                     main_maze[x][y] = move
                     # u
@@ -86,8 +87,3 @@ while True:
             schema(main_maze)
             print(main_maze[-1][-1] - 1)
 
-            ###!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            # unique_coordinates = sorted(new_coordinate)
-            # sorted_coordinates = sorted(unique_coordinates, key=lambda x: (x[1], x[0]))
-            # print(unique_coordinates)
-            #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
